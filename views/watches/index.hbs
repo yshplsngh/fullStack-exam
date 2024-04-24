@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Watches</title>
+  <link rel="stylesheet" type="text/css" href="/public/style.css">
+</head>
+<body>
+  <h1>Watches</h1>
+  <ul>
+    {{#each watches}}
+      <li><a href="/watches/{{_id}}">{{brand}} - {{watchBrand}}</a></li>
+    {{/each}}
+  </ul>
+  <a href="/watches/new">Add new watch</a>
+</body>
+</html>
